@@ -1,9 +1,9 @@
-(function($) {
+﻿(function($) {
 
 	/**
 	 * Parsing the mailto value, defined in href anker attribute.
 	 * @name mailtoParser
-	 * @author Peter M�ller
+	 * @author Peter Müller
 	 * @example $.mailtoParser('mailto:peter.mueller@1und1.de?subject=foo&body=bar');
 	 * @depends jQuery 1.4.2
 	 * @depends queryData Plugin
@@ -19,7 +19,7 @@
 		
 		query = $.isArray(query) && query.length ? query[0].replace(/^\?/gi,'') : '';
 		
-		return $.extend(this.queryData(query), { email : email });
+		return $.extend( !!query ? this.queryData(query) : {}, { email : email });
 	};
 	
 })(jQuery);
