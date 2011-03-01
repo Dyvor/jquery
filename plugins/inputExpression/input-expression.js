@@ -8,6 +8,7 @@
 	 * @example $('#mytext').inputExpression(/^([\d]){0,5}$/i);
 	 * @depends jQuery 1.4.2
 	 * @todo extending num lock coverage.
+	 * @returns {boolean}
 	 */
 	$.fn.inputExpression = function(regexp) {
 	

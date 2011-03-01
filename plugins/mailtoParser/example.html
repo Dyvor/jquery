@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"> 
+<head> 
+	<title>jQuery mailtoParser Plugin</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+	<meta name="author" content="Dyvor - Peter Müller" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js"></script> 
+	<script type="text/javascript" src="dependencies/query-data.js"></script>
+	<script type="text/javascript" src="mailto-parser.js"></script>
+   	<script type="text/javascript">
+	$(function(){
+	
+		/*
+		 * Parsing different urls
+		 */
+		 
+		console.debug($.mailtoParser('mailto:peter.mueller@1und1.de?subject=foo&body=bar'));
+	});
+	</script> 
+</head> 
+<body>
+	<div>
+		To verify the result, please check your console output.
+	</div>
+</body>
+</html>
