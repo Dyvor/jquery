@@ -5,7 +5,7 @@
  * @author Peter Müller
  * @example $.wakeup(function( sleep_ms, awake_ms ) { });
  * @depends jQuery 1.4.2
- * @returns {boolean}
+ * @returns {undefined}
  */
 (function( $, window, undefined ) {
 	
